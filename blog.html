@@ -64,7 +64,7 @@
         }
        
         .moeda {
-            background-color: #3498db;
+            background-color: #6acc4c;
             color: white;
             padding: 10px;
             margin: 10px 0;
@@ -153,9 +153,9 @@
            
             <h3 style="margin-top: 20px;">🔧 Tipos de Engenheiro de Hardware</h3>
             <ul style="margin-left: 20px; line-height: 1.8;">
-                <li><strong>Engenheiro de Sistemas Embarcados:</strong> Cria hardware e software integrados para dispositivos específicos, como automação industrial.</li>
-                <li><strong>Engenheiro de Teste de Hardware:</strong>Responsável por verificar a funcionalidade, desempenho e durabilidade de novos produtos de hardware.</li>
-                <li><strong>Engenheiro de Hardware de Computador:</strong>Especializado no design e melhoria de componentes de computador, incluindo processadores (CPUs), dispositivos de memória e placas gráficas.</li>
+                <li><strong>Engenheiro de Sistemas Embarcados: </strong> Cria hardware e software integrados para dispositivos específicos, como automação industrial.</li>
+                <li><strong>Engenheiro de Teste de Hardware: </strong>Responsável por verificar a funcionalidade, desempenho e durabilidade de novos produtos de hardware.</li>
+                <li><strong>Engenheiro de Hardware de Computador: </strong>Especializado no design e melhoria de componentes de computador, incluindo processadores (CPUs), dispositivos de memória e placas gráficas.</li>
             </ul>
         </div>
        
@@ -171,33 +171,15 @@
                 💾 <strong>Memória Interna</strong>
             </div>
             <div class="moeda" onclick="alert('A GPU é a responsável por processar gráficos e imagens. Diferente da CPU, ela possui milhares de núcleos pequenos feitos para realizar várias tarefas simples ao mesmo tempo')">
-                🖼️ <strong>Unidade de Processamento Gráfico (GPU)</strong>
+                🖼️ <strong>Unidade de Processamento Gráfico</strong>
             </div>
         </div>
     </section>
    
     <footer>
         <p>Projeto educacional - Entendendo hardware de computadores</p>
-        <p>💡 "Hardware é o corpo que dá vida aos sonhos do software."</p>
+        <p>💡 <i>"Hardware é o corpo que dá vida aos sonhos do software."</i></p>
     </footer>
 
-    <script>
-        function converter() {
-            let reais = document.getElementById('valorReal').value;
-            let select = document.getElementById('moedaDestino');
-            let taxa = select.value;
-            let moedaNome = select.options[select.selectedIndex].text;
-           
-            if (reais === "" || reais <= 0) {
-                document.getElementById('resultado').innerHTML = "⚠️ Por favor, digite um valor válido!";
-                document.getElementById('resultado').style.backgroundColor = "#fadbd8";
-                return;
-            }
-           
-            let convertido = reais * taxa;
-            document.getElementById('resultado').innerHTML = `R$ ${reais} equivalem a ${convertido.toFixed(2)} ${moedaNome}`;
-            document.getElementById('resultado').style.backgroundColor = "#d5f5e3";
-        }
-    </script>
 </body>
 </html>
